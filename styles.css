@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url(./Fonts/Norse-Bold.woff) format('woff');
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light grey background for the whole page */
+}
+
+.sidebar {
+    width: 35%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sidebar img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    display: flex;
+    position: absolute;
+    height: 15%;
+    bottom: 64%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Black with transparency */
+    color: white;
+    padding: 10px 0;
+    transform: translateY(50%);
+}
+
+.overlay img {
+    width: 125px;
+    height: 168px; 
+}
+
+.overlay .text-logo {
+    font-family: 'norsebold';
+    font-size: 7rem;
+}
+
+.main {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-header p {
+    width: 48%;
+}
+
+.section-header, .section-footer {
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.form-section {
+    background-color: white; /* White background for form section */
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px #c2c2c2;
+}
+
+.text {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.form-row {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    width: 25%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 1px; /* Increase letter spacing */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.form-group input:focus {
+    border-color: #00BFFF; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+    border-radius: 5px;
+}
+
+.submit-btn {
+    padding: 1.1rem 4rem;
+    background-color: #165e75; /* Iceberg color */
+    color: white;
+    border: 1px solid #073f52;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.login-text {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.login-link {
+    color: #165e75; /* Iceberg color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}

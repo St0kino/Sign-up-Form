@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihlašovací stránka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="./Images/mckayla-crump-EzpVvIrL-Xw-unsplash.jpg" alt="Placeholder Image">
+        <div class="overlay">
+            <img src="./Images/odin-lined.png" alt="Logo Image">
+            <div class="text-logo">ODIN</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="section-header">
+            <p class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p class="text">You <em>know</em> you want to.</p>
+        </div>
+        <div class="section form-section">
+            <form>
+                <p class="text">Let's do this!</p>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Thor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Odinson" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Thor.Odinson@outlook.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="section-footer">
+            <button class="submit-btn">Create Account</button>
+            <p class="login-text">Already have an account? <a href="#" class="login-link">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
